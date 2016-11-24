@@ -5,6 +5,7 @@ angular-tour-of-heroes
 1.0
 
 Ceci est l'aboutissement de ma formation sur le Framework **Angular 2** réalisé avec **TypeScript**.
+
 Source : https://angular.io
 
 ----------
@@ -54,7 +55,7 @@ NodeJS va permettre d'utiliser la commande **tsc** (Typescript).
  Afin d'installer NodeJS lancer la commande suivante :
  
 ```bash
- $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 $ sudo apt-get install -y build-essential
 ```
