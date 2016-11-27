@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 
 import { Hero } from './hero';
@@ -12,9 +11,14 @@ export class HeroService {
         return Promise.resolve(HEROES);
     }
     
+    getHero(id: number): Promise<Hero> {
+        return this.getHeroes()
+            .then(heroes => heroes.find(hero => hero.id === id));
+    }
+    
     getHeroesSlowly(): Promise<Hero[]> {
         return new Promise<Hero[]>(resolve =>
-        setTimeout(resolve, 1500)) // delay 1,5 seconds
+        setTimeout(resolve, 1000)) // delay 1 seconds
             .then(() => this.getHeroes());
     }
     
